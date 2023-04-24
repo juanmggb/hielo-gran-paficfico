@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-container {
+  position: relative;
+  height: 700px;
+  background-image: url("./images/cropped-Bolsa-5k-hielo-gran-pacifico-parque-nacional-uruapan-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* change the opacity here */
+}
+
+.img-logo {
+  width: 100px;
+}
+
+.bi-list {
+  color: white;
+  font-size: 2rem;
+  color: rgb(19, 187, 242);
+}
+
+.navbar-nav li {
+  padding-left: 30px;
+}
+
+.navbar-nav li:last-child {
+  padding-right: 30px;
+}
+
+.main-nav {
+  background-color: rgba(255, 255, 255, 0) !important;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  top: 0;
+
+  transition: background-color 0.5s ease;
+}
+
+.main-nav.scrolled {
+  /* your styling when scrolled */
+  background-color: #fff !important;
+}
+
+.slogan {
+  text-transform: uppercase;
+  color: white;
+
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.slogan h1 {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.active {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  color: rgb(19, 187, 242) !important;
+  text-decoration: underline;
+}
+
+.scrolled .nav-link {
+  color: rgb(19, 187, 242) !important;
+}
+
+.nosotros-content {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nosotros-content h2 {
+  color: #16b8d8df;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.nosotros-content h3 {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.nosotros-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.nosotros-img-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros-img {
+  margin-top: 20px;
+  width: 40vw;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.btn-more {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Sabias que section */
+
+.sabias-container {
+  background-image: url("./images/botellas-de-vino-en-hielo.jpg");
+  background-size: cover; /* This property scales the background image to cover the entire container */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50.90823860307043% 21.001640753183842%; /* This property positions the background image at the center of the horizontal axis and at the bottom of the vertical axis */
+  padding-bottom: 20px;
+}
+
+.sabias-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sabias-img {
+  width: 40vw;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .sabias-img {
+    display: none;
+  }
+
+  .nosotros-img {
+    display: none;
+  }
+}
+
+.sabias-content {
+  text-align: center;
+}
+
+.sabias-content h3 {
+  font-style: italic;
+  font-size: 3em;
+  color: rgb(19, 187, 242);
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.sabias-content p {
+  line-height: 2;
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.sabias-content h2 {
+  /* text-align: center; */
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.clientes-container {
+  margin: 20px 40px;
+  text-align: center;
+}
+
+.clientes-container h3 {
+  color: rgb(19, 187, 242);
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.horizontal-line {
+  height: 3px;
+  width: 30vw;
+  background-color: rgb(19, 187, 242);
+  margin: 20px auto 50px auto;
+}
+
+.clientes-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 80px;
+}
+
+.clientes-list img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.features-container {
+  background-image: url("./images/Hielo-close-up-scaled.jpg");
+  background-position: center center;
+
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.bi-quote {
+  color: blue;
+  font-size: 2rem;
+}
+
+.footer-container {
+  font-size: 0.8rem;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 20px;
+}

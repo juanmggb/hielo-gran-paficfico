@@ -1,0 +1,205 @@
+.header-container {
+  position: relative;
+  height: 100px;
+  background-image: none;
+}
+
+.header-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* change the opacity here */
+}
+
+.navbar-toggler-icon {
+  font-size: 2rem;
+}
+
+.active {
+  color: black !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: black;
+}
+
+.main-nav {
+  background-color: rgba(233, 237, 239, 0.81) !important;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  top: 0;
+
+  transition: background-color 0.5s ease;
+}
+
+.main-nav.scrolled {
+  /* your styling when scrolled */
+  background-color: #fff !important;
+}
+/* Poducts section */
+
+.productos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productos-container h1 {
+  color: rgb(19, 187, 242);
+  font-style: italic;
+}
+
+.productos-container p {
+  text-align: center;
+}
+
+.productos-container small {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(76, 74, 74);
+}
+
+.productos-lista,
+.servicios-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+  background-color: rgba(54, 51, 51, 0.847);
+  max-width: 300px;
+}
+
+.card-img-top {
+  margin-top: 10px;
+  width: 180px;
+}
+
+.servicios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.servicios-container h3 {
+  font-size: 2.5rem;
+  color: rgb(19, 187, 242);
+  font-style: italic;
+}
+
+.servicio-card-body {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicio-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.servicio-img[src="../images/ice-cube-300x146.png"] {
+  margin-bottom: 40px;
+}
+
+.servicio-img[src="../images/cold-150x150.png"] {
+  margin-bottom: 0px;
+}
+
+.card-body {
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.card-features p {
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.contacto-container {
+  background-image: url("../images/Hielo-close-up-scaled.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto-container h2 {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.contacto-container button {
+  color: white;
+}
+
+.cobertura-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 50px;
+  gap: 30px;
+
+  background-color: rgba(54, 51, 51, 0.847);
+
+  margin-bottom: 40px;
+}
+
+.cobertura-texto {
+  background-image: url("../images/Hielo-close-up-scaled.jpg");
+
+  background-position: center center;
+  background-size: cover;
+
+  padding: 10px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 40vw;
+}
+
+.cobertura-icon {
+  font-size: 3rem;
+}
+
+.cobertura-map {
+  width: 40vw;
+}
+
+.cobertura-map img {
+  width: 100%;
+}
